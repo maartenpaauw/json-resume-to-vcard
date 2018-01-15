@@ -1,6 +1,6 @@
 {
   "name": "json-resume-to-vcard",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Converts a JSON Resume file to a vCard",
   "main": "lib/library.js",
   "scripts": {
