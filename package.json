@@ -1,0 +1,53 @@
+{
+  "name": "json-resume-to-vcard",
+  "version": "1.0.0",
+  "description": "Converts a JSON Resume file to a vCard",
+  "main": "lib/library.js",
+  "scripts": {
+    "build": "webpack --env dev && webpack --env build && npm run test",
+    "dev": "webpack --progress --colors --watch --env dev",
+    "test": "nyc mocha --require babel-core/register --colors ./test/*.spec.js",
+    "test:watch": "nyc mocha --require babel-core/register --colors -w ./test/*.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maartenpaauw/json-resume-to-vcard.git"
+  },
+  "keywords": [
+    "json-resume",
+    "resume",
+    "vcard"
+  ],
+  "author": {
+    "name": "Maarten Paauw",
+    "email": "maartenpaauw@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maartenpaauw/json-resume-to-vcard/issues"
+  },
+  "homepage": "https://github.com/maartenpaauw/json-resume-to-vcard#readme",
+  "dependencies": {
+    "base64-img": "1.0.3",
+    "parse-full-name": "1.2.3",
+    "slugify": "1.2.9",
+    "vcard-generator": "0.0.7"
+  },
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-core": "6.26.0",
+    "babel-eslint": "8.2.1",
+    "babel-loader": "7.1.2",
+    "babel-plugin-add-module-exports": "0.2.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-polyfill": "6.26.0",
+    "babel-preset-env": "1.6.1",
+    "chai": "4.1.2",
+    "eslint": "4.15.0",
+    "eslint-loader": "1.9.0",
+    "mocha": "4.1.0",
+    "nyc": "^11.4.1",
+    "webpack": "3.10.0",
+    "yargs": "10.1.1"
+  }
+}
