@@ -1,5 +1,16 @@
 language: node_js
-node_js:
-  - "node"
-  - "7"
-  - "6"
+node_js: 8
+cache:
+  directories:
+  - node_modules
+
+deploy:
+  provider: npm
+  email: maartenpaauw@gmail.com
+  skip_cleanup: true
+  api_key:
+    secure: eIMtOZMN3gifR9/YrUUmHQ6W2bq7XZxJ8tgaA5YWOa/nQoAimh4K/fbLfbjh4SRguxX0yOvl72K/nGAw4ArlmgQ3dM6m9wxh75O23SunLhU78xecp1tRtqXAM+VPGgOOf+V4TIURpY5yaGPZmsxYeOpO/AoH8PYgXY8zGtlogrXAvsgKMJ5GPYm/2mUHfuXnUjINMdhzhOIdvZuZObRGlq3yuVLopPDkzMTj21kfbo5ZoMtgKKP0g2pWAYMlEp4IN2yYTVO5XCDNwS82RLccdDxGTPV3+/IzL0Xmg4FsVO44VAPTAe7deiiGBYXlgT5YxXAWhmFStC/2ZsBW7fbixAv6+x4k28K1LDnNqBpzsoH7cBjnIHJaS6K4FEGNV/6Uxsj5HdaSuhCmN0LfdpO82WBOL8WCzelKEEa8dAcvGAGnFMNfpueqfyWFAGz166tz2gQ+VS4toJ7se4ROl8XD4q2pkeQbWSw0KWDJHWZ3ARoCNLcb33aoE3ArUV2tG4IbN94qT4sWkYoHyPS8edpVGwDiKvayFKMcQFnz/A1uv6JRsAMdicqRQz1euJujswaIXFZHloavgfY8Q2n0hDw4/sQUG0PPXV2lOo37dQG1KiosCKG1m/Aa4hfhxg5eY+U13H7VJe1AoQ/jl9KwoP1/fTmzaY/Hs6BX4E/t/C3Rpz4=
+  on:
+    tags: true
+    branch: master
+    repo: maartenpaauw/json-resume-to-vcard
