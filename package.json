@@ -4,6 +4,8 @@
   "description": "Converts a JSON Resume file to a vCard",
   "main": "lib/library.js",
   "scripts": {
+    "commitmsg": "commitlint -e",
+    "precommit": "lint-staged",
     "build": "webpack --env dev && webpack --env build && npm run test",
     "dev": "webpack --progress --colors --watch --env dev",
     "test": "nyc mocha --require babel-core/register --colors ./test/*.spec.js",
@@ -34,6 +36,8 @@
     "vcard-generator": "0.0.7"
   },
   "devDependencies": {
+    "@commitlint/cli": "6.0.2",
+    "@commitlint/config-conventional": "6.0.2",
     "babel-cli": "6.26.0",
     "babel-core": "6.26.0",
     "babel-eslint": "8.2.1",
@@ -45,6 +49,8 @@
     "chai": "4.1.2",
     "eslint": "4.15.0",
     "eslint-loader": "1.9.0",
+    "husky": "0.14.3",
+    "lint-staged": "6.0.0",
     "mocha": "4.1.0",
     "nyc": "^11.4.1",
     "webpack": "3.10.0",
@@ -53,5 +59,10 @@
   "greenkeeper": {
     "branchPrefix": "dependency-update-",
     "label": "dependency-update"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix"
+    ]
   }
 }
