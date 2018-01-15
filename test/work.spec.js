@@ -1,4 +1,5 @@
 import chai from 'chai'
+
 import resume from './resume.json'
 import Work from '../src/work'
 

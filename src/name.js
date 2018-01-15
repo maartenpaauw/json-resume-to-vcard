@@ -1,5 +1,6 @@
 import slugify from 'slugify'
 import { parseFullName } from 'parse-full-name'
+
 import Resume from './resume'
 
 export default class Name extends Resume {

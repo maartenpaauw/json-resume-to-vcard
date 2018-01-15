@@ -1,5 +1,6 @@
-import Resume from './resume'
 import base64Img from 'base64-img'
+
+import Resume from './resume'
 
 export default class Image extends Resume {
 
