@@ -49,5 +49,9 @@
     "nyc": "^11.4.1",
     "webpack": "3.10.0",
     "yargs": "10.1.1"
+  },
+  "greenkeeper": {
+    "branchPrefix": "dependency-update-",
+    "label": "dependency-update"
   }
 }
