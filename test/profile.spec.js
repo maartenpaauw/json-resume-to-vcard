@@ -17,12 +17,12 @@ describe('PROFILE', () => {
   it('should return a profile array', () => {
     expect(profile.socialProfiles()).to.be.deep.equal([
       {
-        'type': 'twitter',
-        'user': 'neutralthoughts'
+        type: 'twitter',
+        user: 'neutralthoughts'
       },
       {
-        'type': 'soundcloud',
-        'user': 'dandymusicnl'
+        type: 'soundcloud',
+        user: 'dandymusicnl'
       }
     ])
   })

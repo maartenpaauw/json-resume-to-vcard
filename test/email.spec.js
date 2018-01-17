@@ -16,8 +16,8 @@ describe('EMAIL', () => {
 
   it('should return an email array', () => {
     expect(email.emails()).to.be.deep.equal([{
-      'text': 'richard.hendriks@mail.com',
-      'type': 'home'
+      type: 'home',
+      text: 'richard.hendriks@mail.com'
     }])
   })
 })
