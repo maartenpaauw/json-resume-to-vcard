@@ -1,3 +1,4 @@
+import 'babel-polyfill'
 import base64Img from 'base64-img'
 
 import Resume from './resume'
