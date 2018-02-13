@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/maartenpaauw/json-resume-to-vcard#readme",
   "dependencies": {
-    "base64-img": "1.0.3",
+    "base64-img": "1.0.4",
     "parse-full-name": "1.2.3",
     "slugify": "1.2.9",
     "vcard-generator": "0.0.7"
