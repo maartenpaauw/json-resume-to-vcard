@@ -42,7 +42,7 @@
     "babel-core": "6.26.3",
     "babel-eslint": "9.0.0",
     "babel-loader": "7.1.5",
-    "babel-plugin-add-module-exports": "0.3.2",
+    "babel-plugin-add-module-exports": "1.0.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-polyfill": "6.26.0",
     "babel-preset-env": "1.7.0",
